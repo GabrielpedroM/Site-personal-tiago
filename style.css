@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero {
+    height: 90vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("../IMG/FotoSite.png");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    color: white;
+    max-width: 600px;
+    margin-left: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00c853;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #00a844;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.sobre {
+    padding: 120px 20px;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url("../IMG/fundo2.jpg") center center / cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+
+.sobre-descricao {
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+
+.carrossel {
+    position: relative;
+    width: 380px;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.slide.active {
+    display: block;
+}
+
+
+.prev,
+.next {
+    display: none;
+}
+
+
+.video-box video {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+.instagram-box {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.btn-instagram {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-instagram:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+    .sobre-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .video-box video {
+        width: 100%;
+    }
+
+    .carrossel {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+.treinos-page {
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("../IMG/fundo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.treinos-page {
+    color: white;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+.planos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+@media (max-width: 900px) {
+    .planos {
+        grid-template-columns: 1fr;
+    }
+}
+.btn-comprar {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-comprar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ff88;
+    margin: 15px 0;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.whatsapp-box {
+    margin-top: 80px;
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 16px;
+}
+
+.whatsapp-box h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.whatsapp-box p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
