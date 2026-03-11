@@ -45,7 +45,7 @@ border-radius:20px;
 overflow:hidden;
 
 background-image:
-linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
 url("../IMG/fotosite1.png");
 
 background-size:cover;
@@ -58,59 +58,40 @@ align-items:center;
 
 .hero-text{
 color:white;
-max-width:520px;
+max-width:600px;
 padding:40px;
-
-background:rgba(0,0,0,0.35);
-border-radius:14px;
-
-backdrop-filter:blur(4px);
-
-box-shadow:0 10px 40px rgba(0,0,0,0.6);
 }
 
 .hero h1{
-font-size:52px;
+font-size:48px;
 margin-bottom:20px;
-line-height:1.1;
-text-shadow:0 5px 15px rgba(0,0,0,0.6);
 }
 
 .hero h2{
 font-weight:normal;
 margin-bottom:20px;
-font-size:20px;
-opacity:0.95;
 }
 
 .hero p{
 margin-bottom:25px;
 line-height:1.6;
-font-size:16px;
-opacity:0.9;
 }
 
 /* BOTÃO */
 
 .button{
 display:inline-block;
-padding:14px 30px;
-
-background:linear-gradient(45deg,#00e676,#00c853);
-
+padding:12px 25px;
+background-color:#00c853;
 color:white;
 text-decoration:none;
-border-radius:8px;
+border-radius:5px;
 font-weight:bold;
-
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
-
 transition:0.3s;
 }
 
 .button:hover{
-transform:scale(1.05);
-background:linear-gradient(45deg,#00c853,#00a844);
+background-color:#00a844;
 }
 
 /* SOBRE */
@@ -383,12 +364,11 @@ justify-content:center;
 
 .hero-text{
 max-width:100%;
-padding:25px;
-background:rgba(0,0,0,0.45);
+padding:20px;
 }
 
 .hero h1{
-font-size:34px;
+font-size:32px;
 }
 
 .hero h2{
