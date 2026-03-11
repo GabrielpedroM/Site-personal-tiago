@@ -4,6 +4,25 @@ font-family:Arial, sans-serif;
 background:#0b0b0b;
 }
 
+/* LOGO TOPO */
+
+.logo-topo{
+position:absolute;
+top:25px;
+left:50px;
+
+color:white;
+font-size:28px;
+font-weight:700;
+
+letter-spacing:3px;
+text-transform:uppercase;
+
+text-shadow:0 4px 10px rgba(0,0,0,0.6);
+
+z-index:20;
+}
+
 /* NAV */
 
 nav{
@@ -40,8 +59,8 @@ padding:0 20px;
 
 .hero{
 height:90vh;
-margin:20px;
-border-radius:20px;
+margin:6px;
+border-radius:14px;
 overflow:hidden;
 
 background-image:
@@ -54,12 +73,20 @@ background-repeat:no-repeat;
 
 display:flex;
 align-items:center;
+justify-content:flex-start;
+}
+
+.hero .container{
+margin-left:120px;
+margin-right:auto;
+max-width:1100px;
 }
 
 .hero-text{
 color:white;
 max-width:600px;
 padding:40px;
+margin-left:-60px;
 }
 
 .hero h1{
@@ -365,6 +392,7 @@ justify-content:center;
 .hero-text{
 max-width:100%;
 padding:20px;
+margin-left:0;
 }
 
 .hero h1{
