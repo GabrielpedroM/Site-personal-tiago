@@ -422,3 +422,69 @@ font-size:16px;
 }
 
 }
+.footer-personal {
+    background-color: #0a0a0a; /* Um preto bem profundo */
+    color: #ffffff;
+    padding: 60px 0 20px;
+    border-top: 2px solid #00ce52; /* Linha verde igual ao seu botão */
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-info h3, .footer-links h4 {
+    color: #00ce52; /* Verde para os títulos */
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00ce52;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    color: #666;
+    font-size: 0.85rem;
+}
+.header-simples {
+    background-color: #000; /* Fundo preto puro */
+    padding: 20px 0;
+    text-align: center; /* Centraliza o nome */
+    border-bottom: 1px solid #1a1a1a; /* Linha bem sutil */
+}
+
+.nome-professor {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 4px; /* Espaçamento entre letras para dar um ar moderno */
+    margin: 0;
+    text-transform: uppercase; /* Deixa tudo em maiúsculo */
+}
+
+.nome-professor span {
+    color: #00ce52; /* O verde de destaque */
+}
